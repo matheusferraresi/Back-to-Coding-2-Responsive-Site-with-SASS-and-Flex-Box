@@ -11,7 +11,7 @@
    ========================================================================== */
 
    html {
-    @include font($font-normal);
+    @include font($font-light);
     line-height: 1.6; /* 2 */
     -ms-text-size-adjust: 100%; /* 3 */
     -webkit-text-size-adjust: 100%; /* 3 */
