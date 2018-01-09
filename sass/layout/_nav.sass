@@ -5,8 +5,12 @@
     right: 0
     left: 100%
     font-size: 1.3rem
-
     overflow: hidden
+
+    @media (min-width: 45rem)
+        position: relative
+        background: none
+        left: 0
 
     ul
         height: 100vh
@@ -14,10 +18,20 @@
         flex-direction: column
         justify-content: space-around
 
+        @media (min-width: 45rem)
+            flex-direction: row
+            height: auto
+            text-align: right
+            padding-right: 2em
+
     li
         display: flex
         flex: 1 1 auto
         border-bottom: 1px solid rgba(0, 0, 0, .15)
+
+        @media (min-width: 45rem)
+            border: none
+            display: inline-block
 
     a
         color: $text-inverse
@@ -27,11 +41,26 @@
         align-items: center
         justify-content: center
 
+        @media (min-width: 45rem)
+            display: inline-block
+            justify-content: flex-end
+            padding: 0.5em 1em
+
         &:hover, &:focus
             background: rgba(0, 0, 0, .10)
 
+            @media (min-width: 45rem)
+                background: none
+                color: darken($accent, 5%)
+
     &.is-open
         left: 0
+
+.container--nav
+    max-width: 100%
+    width: 100%
+    padding: 1em
+    justify-content: space-between
 
 
 
@@ -44,6 +73,9 @@
     right: 0.5em
     top: 0.5em
     cursor: pointer
+
+    @media (min-width: 45rem)
+        display: none
 
 .hamburger, .hamburger::before, .hamburger::after
     content: ''

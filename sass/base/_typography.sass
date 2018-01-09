@@ -23,6 +23,7 @@ h2
     line-height: 0.9
     span
         font-weight: $font-light
+        display: block
 
 .title-box
     background: $accent
@@ -35,11 +36,8 @@ h2
     @media (min-width: 30rem)
         transform: translateY(50%)
 
-    & + .bg-primary
-        padding-top: 6em
-
-        @media (min-width: 30rem)
-            padding-top: 8em
+    @media (min-width: 45rem)
+        max-width: 43rem
 
 .title-footer
     text-transform: uppercase

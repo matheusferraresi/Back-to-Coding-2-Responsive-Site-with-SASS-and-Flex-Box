@@ -8,11 +8,13 @@
 @import vendor/normalize
 
 // 3. Base styles
+//Loading grid before so the base can override the paddings and margins
+@import layout/grid
+
 @import base/base
 @import base/typography
 
 // 4. Layout
-@import layout/grid
 @import layout/nav
 @import layout/header
 @import layout/hero

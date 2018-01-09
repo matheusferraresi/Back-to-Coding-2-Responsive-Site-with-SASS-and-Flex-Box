@@ -32,7 +32,15 @@ footer
     justify-content: space-around
     width: 90%
     margin: 0 auto
+    position: relative
 
     a
         text-decoration: none
         font-weight: $font-bold
+        padding: 1em
+    
+        &:hover, &:focus
+            color: darken($text-inverse, 50%)
+
+.container--footer
+    max-width: 25rem
