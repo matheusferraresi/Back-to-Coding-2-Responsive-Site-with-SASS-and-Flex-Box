@@ -461,6 +461,7 @@ template {
 
 body {
   color: #048ca8;
+  text-align: center;
 }
 
 img {
@@ -519,6 +520,20 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.col {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+}
+
+.col--full {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
 }
 
 .main-nav {
@@ -633,8 +648,9 @@ h2 {
 
 .logo {
   width: 25%;
-  min-width: 10em;
+  min-width: 8em;
   max-width: 15em;
+  padding-left: 1.5em;
 }
 
 .hero {
@@ -645,11 +661,28 @@ h2 {
   color: white;
   padding-top: 8em;
   padding-bottom: 8em;
+  height: 100vh;
   text-align: center;
 }
 
 .hero-img {
   display: none;
+}
+
+.sales-points {
+  padding: 10vh 0;
+}
+
+.sales-point {
+  margin-bottom: 2.5em;
+}
+
+.sales-point:first-of-type {
+  margin-top: 2em;
+}
+
+.sales-point:last-child {
+  margin-bottom: 0;
 }
 
 .btn {
