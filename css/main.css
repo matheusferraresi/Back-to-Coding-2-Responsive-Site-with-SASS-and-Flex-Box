@@ -714,10 +714,13 @@ h2 {
   background: -o-linear-gradient(left, #048ca8, #16db93);
   background: linear-gradient(to right, #048ca8, #16db93);
   color: white;
-  padding-top: 8em;
-  padding-bottom: 8em;
   height: 100vh;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .sales-points {
